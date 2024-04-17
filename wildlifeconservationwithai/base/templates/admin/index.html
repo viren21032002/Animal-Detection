@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Adminox - Responsive Web App Kit</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc."
+          name="description"/>
+    <meta content="Coderthemes" name="author"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <!-- App favicon -->
+    <link rel="shortcut icon"
+          href="../../static/adminResources/images/favicon.ico">
+
+    <!-- C3 charts css -->
+    <link href="../../static/adminResources/css/c3.min.css" rel="stylesheet"
+          type="text/css"/>
+
+    <!-- App css -->
+    <link href="../../static/adminResources/css/bootstrap.min.css"
+          rel="stylesheet" type="text/css"/>
+    <link href="../../static/adminResources/css/icons.css" rel="stylesheet"
+          type="text/css"/>
+    <link href="../../static/adminResources/css/metismenu.min.css"
+          rel="stylesheet" type="text/css"/>
+    <link href="../../static/adminResources/css/style.css" rel="stylesheet"
+          type="text/css"/>
+
+    <script src="../../static/adminResources/js/modernizr.min.js"></script>
+
+</head>
+
+
+<body>
+
+<!-- Begin page -->
+<div id="wrapper">
+
+    <!-- Top Bar Start -->
+
+
+    {% include 'admin/header.html' %}
+
+
+    <!-- Top Bar End -->
+
+
+    <!-- ========== Left Sidebar Start ========== -->
+
+
+    {% include 'admin/menu.html' %}
+
+
+    <!-- Left Sidebar End -->
+
+
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="content-page">
+        <!-- Start content -->
+        <div class="content">
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box">
+                            <h4 class="page-title float-left">Dashboard</h4>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end row -->
+
+
+                <div class="row">
+
+                    <div class="col-xl-3 col-sm-6">
+                        <div class="card-box widget-box-two widget-two-custom">
+                            <i class="mdi mdi-currency-usd widget-two-icon"></i>
+                            <div class="wigdet-two-content">
+                                <p class="m-0 text-uppercase font-bold font-secondary text-overflow"
+                                   title="Statistics">Total Lion</p>
+                                <h2 class="font-600"><span><i
+                                        class="mdi mdi-arrow-up"></i></span>
+                                    <span data-plugin="counterup">576</span>
+                                </h2>
+                                <p class="m-0">Jan - Apr 2023</p>
+                            </div>
+                        </div>
+                    </div><!-- end col -->
+
+                    <div class="col-xl-3 col-sm-6">
+                        <div class="card-box widget-box-two widget-two-custom">
+                            <i class="mdi mdi-account-multiple widget-two-icon"></i>
+                            <div class="wigdet-two-content">
+                                <p class="m-0 text-uppercase font-bold font-secondary text-overflow"
+                                   title="Statistics">Total Lion Seen</p>
+                                <h2 class="font-600"><span><i
+                                        class="mdi mdi-arrow-up"></i></span>
+                                    <span data-plugin="counterup">36</span>
+                                </h2>
+                                <p class="m-0">Jan - Apr 2023</p>
+                            </div>
+                        </div>
+                    </div><!-- end col -->
+
+                    <div class="col-xl-3 col-sm-6">
+                        <div class="card-box widget-box-two widget-two-custom">
+                            <i class="mdi mdi-crown widget-two-icon"></i>
+                            <div class="wigdet-two-content">
+                                <p class="m-0 text-uppercase font-bold font-secondary text-overflow"
+                                   title="Statistics">Lions Protected</p>
+                                <h2 class="font-600"><span><i
+                                        class="mdi mdi-arrow-up"></i></span>
+                                    <span data-plugin="counterup">{{ lionCount
+                                            }}</span>
+                                </h2>
+                                <p class="m-0">Jan - Apr 2023</p>
+                            </div>
+                        </div>
+                    </div><!-- end col -->
+
+                    <div class="col-xl-3 col-sm-6">
+                        <div class="card-box widget-box-two widget-two-custom">
+                            <i class="mdi mdi-auto-fix widget-two-icon"></i>
+                            <div class="wigdet-two-content">
+                                <p class="m-0 text-uppercase font-bold font-secondary text-overflow"
+                                   title="Statistics">Conversation Rate</p>
+                                <h2 class="font-600"><span><i
+                                        class="mdi mdi-arrow-up"></i></span>
+                                    <span data-plugin="counterup">83.3</span>%
+                                </h2>
+                                <p class="m-0">Jan - Apr 2023</p>
+                            </div>
+                        </div>
+                    </div><!-- end col -->
+
+                </div>
+                <!-- end row -->
+
+            </div> <!-- container -->
+
+        </div> <!-- content -->
+
+        {% include 'admin/footer.html' %}
+
+    </div>
+
+
+    <!-- ============================================================== -->
+    <!-- End Right content here -->
+    <!-- ============================================================== -->
+
+
+</div>
+<!-- END wrapper -->
+
+
+<!-- jQuery  -->
+<script src="../../static/adminResources/js/jquery.min.js"></script>
+<script src="../../static/adminResources/js/popper.min.js"></script>
+<!-- Popper for Bootstrap -->
+<script src="../../static/adminResources/js/bootstrap.min.js"></script>
+<script src="../../static/adminResources/js/metisMenu.min.js"></script>
+<script src="../../static/adminResources/js/waves.js"></script>
+<script src="../../static/adminResources/js/jquery.slimscroll.js"></script>
+
+<!-- Counter js  -->
+<script src="../../static/adminResources/js/jquery.waypoints.min.js"></script>
+<script src="../../static/adminResources/js/jquery.counterup.min.js"></script>
+
+<!--C3 Chart-->
+<script type="text/javascript"
+        src="../../static/adminResources/js/d3.min.js"></script>
+<script type="text/javascript"
+        src="../../static/adminResources/js/c3.min.js"></script>
+
+<!--Echart Chart-->
+<script src="../../static/adminResources/js/echarts-all.js"></script>
+
+<!-- Dashboard init -->
+<script src="../../static/adminResources/js/jquery.dashboard.js"></script>
+
+<!-- App js -->
+<script src="../../static/adminResources/js/jquery.core.js"></script>
+<script src="../../static/adminResources/js/jquery.app.js"></script>
+
+</body>
+</html>

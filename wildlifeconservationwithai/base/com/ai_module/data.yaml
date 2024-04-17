@@ -1,0 +1,6 @@
+train : D:\Project_lion\7065 images\images
+val : D:\Project_lion\7065 images\images
+
+nc : 1
+
+names : ['lion']
